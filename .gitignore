@@ -1,0 +1,123 @@
+# Python 관련
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+.env
+
+# Django 관련
+*.pot
+*.pyc
+*.so
+*.pyo
+*.pyd
+staticfiles/
+node_modules/
+
+# macOS 관련
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# 특정 폴더
+.idea/
+.vscode/
+.project
+.pydevproject
+
+# Poetry 관련
+poetry.lock
+.cache/
+__pycache__/
+*.egg-info/
+.eggs/
+
+# 기타 IDE 및 에디터 관련
+*.swp
+*~
+.sass-cache/
+.htpasswd
+
+# 환경 설정 관련
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mypy
+.mypy_cache/
+
+# Pyre
+.pyre/
+
+# pytest
+.cache/
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Pycharm
+.idea/
+*.iml
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+pip-wheel-metadata/
+share/python-wheels/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+
+# Unit test / coverage reports
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/

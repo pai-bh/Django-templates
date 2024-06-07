@@ -1,0 +1,45 @@
+{% load static %}
+<nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
+
+        {# Logo start #}
+        <div class="sidebar-brand">
+            사이드바 로고 기입
+        </div>
+        {# Logo end #}
+
+        <!-- sidebar-menu Start -->
+        <ul class="sidebar-menu pt-3">
+            {# 폴더 메뉴 #}
+            <li class="sidebar-dropdown">
+                <a href="javascript:void(0)"><i class="uil uil-user me-2 d-inline-block"></i>Nested menu</a>
+                <div class="sidebar-submenu">
+                    <ul>
+                        <li><a href="">sub menu1</a></li>
+                        <li><a href="">sub menu2</a></li>
+                    </ul>
+                </div>
+            </li>
+            {# 단일 메뉴 #}
+            <li>
+                <a href="">
+                    <i class="uil uil-apps me-2 d-inline-block"></i>
+                    Single menu
+                </a>
+            </li>
+        </ul>
+        <!-- sidebar-menu End -->
+    </div>
+
+    <!-- sidebar-content Start -->
+    <ul class="sidebar-footer list-unstyled mb-0">
+        {# Chatting start #}
+        <li class="list-inline-item mb-0 ms-1">
+            <a href="#" class="btn btn-icon btn-pills btn-soft-primary">
+                <i class="uil uil-comment icons"></i>
+            </a>
+        </li>
+        {# Chatting end #}
+    </ul>
+    <!-- sidebar-content end -->
+</nav>

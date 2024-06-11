@@ -4,6 +4,11 @@ from django.core.management.commands.startapp import Command as StartAppCommand
 from django.template import Template, Context
 from django.conf import settings
 
+def get_project_name():
+    # settings.py의 경로를 기반으로 프로젝트 디렉토리 이름 가져오기
+    project_name = settings.SETTINGS_MODULE.split('.')[0]
+    return project_name
+
 class Command(StartAppCommand):
     help = 'Creates a Django app directory structure for the given app name in the apps directory.'
 
@@ -52,6 +57,7 @@ class Command(StartAppCommand):
         self.create_templates_structure(app_path, app_name)
         self.create_static_structure(app_name)
         self.create_apps_py(app_path, app_name)
+        self.create_test_files(app_name)
         self.process_templates(app_path, app_name)
 
     def create_templates_structure(self, app_path, app_name):
@@ -98,6 +104,18 @@ class {{ camel_case_app_name }}Config(AppConfig):
         with open(os.path.join(app_path, 'apps.py'), 'w') as f:
             f.write(apps_py_content)
 
+    def create_test_files(self, app_name):
+        base_test_path = os.path.join('tests', app_name)
+        os.makedirs(base_test_path, exist_ok=True)
+
+        test_files = ['test_service.py', 'test_view.py', 'test_repository.py', 'conftest.py']
+        for test_file in test_files:
+            with open(os.path.join(base_test_path, test_file), 'w') as f:
+                if test_file == 'conftest.py':
+                    f.write("# conftest.py for pytest fixtures and settings")
+                else:
+                    f.write(f"# {test_file} for {app_name}")
+
     def process_templates(self, app_path, app_name):
         for root, dirs, files in os.walk(app_path):
             for file in files:
@@ -111,8 +129,8 @@ class {{ camel_case_app_name }}Config(AppConfig):
 
     def add_app_to_project(self, app_name):
         base_dir = settings.BASE_DIR
-        project_urls_path = os.path.join(base_dir, 'urls.py')
-        project_settings_path = os.path.join(base_dir, 'settings/base.py')
+        project_urls_path = os.path.join(base_dir, get_project_name(), 'urls.py')
+        project_settings_path = os.path.join(base_dir, get_project_name(), 'settings/base.py')
 
         # Add app to project urls.py
         app_include_statement = f"    path('{app_name}/', include('apps.{app_name}.urls')),\n"

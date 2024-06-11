@@ -11,3 +11,11 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+# Log setting
+LOG_LEVEL = 'INFO'
+
+LOGGING['handlers']['console']['level'] = LOG_LEVEL
+LOGGING['handlers']['django.server']['level'] = LOG_LEVEL
+LOGGING['loggers']['console']['level'] = LOG_LEVEL
+LOGGING['loggers']['django.server']['level'] = LOG_LEVEL

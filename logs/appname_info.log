@@ -1,0 +1,53 @@
+2024-06-11 12:10:47,805 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:10:47,810 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:10:47,834 - [INFO] - [appname:views.py:37] - example_view completed with status 200
+2024-06-11 12:13:19,231 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:13:19,232 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:13:20,342 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:13:20,343 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:13:34,881 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:13:34,881 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:13:36,835 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:13:36,835 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:13:44,176 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:13:44,176 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:13:44,994 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:13:44,995 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:14:15,173 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:14:15,173 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:14:15,880 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:14:15,880 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:15:55,214 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:15:55,216 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:15:55,232 - [INFO] - [appname:views.py:37] - example_view completed with status 200
+2024-06-11 12:17:04,209 - [INFO] - [appname:views.py:29] - example_view called with method POST
+2024-06-11 12:17:04,210 - [DEBUG] - [appname:services.py:20] - example_view_post called
+2024-06-11 12:17:04,212 - [ERROR] - [appname:services.py:27] - Error in example_view_post: 4 validation errors for ExampleDomainDTO
+name
+  str type expected (type=type_error.str)
+description
+  str type expected (type=type_error.str)
+created_ate
+  field required (type=value_error.missing)
+is_deleted
+  field required (type=value_error.missing)
+2024-06-11 12:17:04,213 - [INFO] - [appname:views.py:37] - example_view completed with status 500
+2024-06-11 12:17:47,231 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:17:47,231 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:17:48,392 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:17:48,393 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:18:00,685 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-11 12:18:00,685 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-11 12:18:00,689 - [INFO] - [appname:views.py:37] - example_view completed with status 200
+2024-06-11 12:18:06,297 - [INFO] - [appname:views.py:29] - example_view called with method POST
+2024-06-11 12:18:06,298 - [DEBUG] - [appname:services.py:27] - example_view_post called
+2024-06-11 12:18:06,299 - [ERROR] - [appname:services.py:34] - Error in example_view_post: 4 validation errors for ExampleDomainDTO
+name
+  str type expected (type=type_error.str)
+description
+  str type expected (type=type_error.str)
+created_ate
+  field required (type=value_error.missing)
+is_deleted
+  field required (type=value_error.missing)
+2024-06-11 12:18:06,305 - [INFO] - [appname:views.py:37] - example_view completed with status 500

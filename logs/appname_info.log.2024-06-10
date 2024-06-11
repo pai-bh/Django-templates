@@ -1,0 +1,36 @@
+2024-06-10 15:06:33,652 - [INFO] - [appname:views.py:31] - example_view called with method GET
+2024-06-10 15:06:33,661 - [INFO] - [appname:views.py:39] - example_view completed with status 200
+2024-06-10 15:06:49,674 - [INFO] - [appname:views.py:31] - example_view called with method GET
+2024-06-10 15:06:49,680 - [INFO] - [appname:views.py:39] - example_view completed with status 200
+2024-06-10 15:15:50,380 - [INFO] - [appname:views.py:31] - example_view called with method GET
+2024-06-10 15:15:50,397 - [INFO] - [appname:views.py:39] - example_view completed with status 200
+2024-06-10 15:16:33,904 - [INFO] - [appname:views.py:31] - example_view called with method GET
+2024-06-10 15:16:33,908 - [INFO] - [appname:views.py:39] - example_view completed with status 200
+2024-06-10 15:17:06,736 - [INFO] - [appname:views.py:31] - example_view called with method GET
+2024-06-10 15:17:06,748 - [INFO] - [appname:views.py:39] - example_view completed with status 200
+2024-06-10 15:18:51,418 - [INFO] - [appname:views.py:31] - example_view called with method GET
+2024-06-10 15:18:51,419 - [INFO] - [appname:services.py:15] - example_view_get called
+2024-06-10 15:18:51,436 - [INFO] - [appname:views.py:39] - example_view completed with status 200
+2024-06-10 15:19:19,004 - [INFO] - [appname:views.py:31] - example_view called with method GET
+2024-06-10 15:19:19,004 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-10 15:19:19,009 - [INFO] - [appname:views.py:39] - example_view completed with status 200
+2024-06-10 15:20:26,384 - [INFO] - [appname:views.py:31] - example_view called with method GET
+2024-06-10 15:20:26,384 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-10 15:20:26,387 - [INFO] - [appname:views.py:39] - example_view completed with status 200
+2024-06-10 15:20:34,412 - [INFO] - [appname:views.py:31] - example_view called with method GET
+2024-06-10 15:20:34,412 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-10 15:20:34,415 - [INFO] - [appname:views.py:39] - example_view completed with status 200
+2024-06-10 15:22:28,316 - [INFO] - [appname:views.py:52] - example_template_view called with pk 1
+2024-06-10 15:22:28,332 - [INFO] - [appname:views.py:54] - example_template_view completed with status 200
+2024-06-10 15:24:04,959 - [INFO] - [appname:views.py:50] - example_template_view called with pk 1
+2024-06-10 15:24:04,963 - [INFO] - [appname:views.py:52] - example_template_view completed with status 200
+2024-06-10 15:24:15,089 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-10 15:24:15,091 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-10 15:24:15,093 - [INFO] - [appname:views.py:37] - example_view completed with status 200
+2024-06-10 15:24:59,555 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-10 15:24:59,555 - [ERROR] - [appname:views.py:31] - Unsupported method: GET
+2024-06-10 15:24:59,555 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-10 15:24:59,561 - [INFO] - [appname:views.py:38] - example_view completed with status 200
+2024-06-10 15:47:02,169 - [INFO] - [appname:views.py:29] - example_view called with method GET
+2024-06-10 15:47:02,171 - [DEBUG] - [appname:services.py:15] - example_view_get called
+2024-06-10 15:47:02,180 - [INFO] - [appname:views.py:37] - example_view completed with status 200

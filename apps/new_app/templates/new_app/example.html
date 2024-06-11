@@ -1,21 +1,41 @@
 {% extends 'layout/base.html' %}
 {% load static %}
 
-<!-- css를 등록합니다. -->
 {% block css %}
 {% endblock %}
 
-<!-- content를 등록합니다. -->
 {% block modal %}
 {% endblock %}
 
-<!-- content를 등록합니다. -->
 {% block contents %}
 <h1>Example Template for {{ app_name }}</h1>
 <p>This is an example page for the app {{ app_name }}. You can customize this page as needed.</p>
+
+<!-- Example Data Display (for GET request) -->
+{% if example_data %}
+    <h2>Example Data:</h2>
+    <ul>
+        <li>ID: {{ example_data.id }}</li>
+        <li>Name: {{ example_data.name }}</li>
+        <li>Description: {{ example_data.description }}</li>
+        <li>Created At: {{ example_data.created_at }}</li>
+        <li>Is Deleted: {{ example_data.is_deleted }}</li>
+    </ul>
+{% endif %}
+
+<!-- Form for POST request -->
+<h2>Create New Example</h2>
+<form method="post" action="{% url 'new_app:example' %}">
+    {% csrf_token %}
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description"><br><br>
+    <label for="created_at">Created At:</label>
+    <input type="datetime-local" id="created_at" name="created_at" required><br><br>
+    <input type="submit" value="Submit">
+</form>
 {% endblock %}
 
-
-<!-- js를 등록합니다. -->
 {% block js %}
 {% endblock %}

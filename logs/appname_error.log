@@ -1,0 +1,18 @@
+2024-06-11 12:17:04,212 - [ERROR] - [appname:services.py:27] - Error in example_view_post: 4 validation errors for ExampleDomainDTO
+name
+  str type expected (type=type_error.str)
+description
+  str type expected (type=type_error.str)
+created_ate
+  field required (type=value_error.missing)
+is_deleted
+  field required (type=value_error.missing)
+2024-06-11 12:18:06,299 - [ERROR] - [appname:services.py:34] - Error in example_view_post: 4 validation errors for ExampleDomainDTO
+name
+  str type expected (type=type_error.str)
+description
+  str type expected (type=type_error.str)
+created_ate
+  field required (type=value_error.missing)
+is_deleted
+  field required (type=value_error.missing)

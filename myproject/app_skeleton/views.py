@@ -1,17 +1,23 @@
 from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from drf_yasg.utils import swagger_auto_schema
+from drf_spectacular.utils import extend_schema, OpenApiResponse, extend_schema_view, inline_serializer
 from django.shortcuts import render
 
-import services  # [권장] : from apps.new_app import services
-from .dto import ExampleDomainDTO  # [권장] : from apps.{{app_name}}.dto import ExampleDomainDTO
+from common.utils.swagger import generate_openapi_schema, generate_inline_serializer
+from apps.appname import services
+from apps.appname.dto import ExampleDomainDTO, ExampleCreateDTO
 
-
-@swagger_auto_schema(
-    method='post',
-    request_body=ExampleDomainDTO.schema(),
-    responses={201: ExampleDomainDTO.schema()},
-    operation_description="Create a new example domain object"
+@extend_schema_view(
+    get=extend_schema(
+        summary="Example API GET",
+        description="An example API endpoint for GET request.",
+        responses={200: OpenApiResponse(response=generate_openapi_schema(ExampleDomainDTO))}
+    ),
+    post=extend_schema(
+        summary="Example API POST",
+        description="An example API endpoint for POST request.",
+        request=generate_inline_serializer(ExampleCreateDTO),
+        responses={201: OpenApiResponse(response=generate_openapi_schema(ExampleDomainDTO))}
+    )
 )
 @api_view(['GET', 'POST'])
 def example_view(request):
@@ -23,5 +29,13 @@ def example_view(request):
         raise Exception("Not supported method")
 
 
-def example_template_view(request):
-    return render(request, 'app_name/example.html', {'app_name': 'app_name'})
+@extend_schema_view(
+    get=extend_schema(
+        summary="Example API",
+        description="An example API endpoint.",
+        responses={200: OpenApiResponse(response=generate_openapi_schema(ExampleDomainDTO))}
+    )
+)
+@api_view(['GET'])
+def example_template_view(request, pk):
+    return render(request, 'new_app/example.html', {'app_name': 'app_name', 'pk': pk})

@@ -1,12 +1,10 @@
+"""repository.py: DB와 직접 통신하는 소스를 작성해주세요. """
 from typing import List, Optional
 from django.db import transaction
 
-from .exceptions import NotFoundException
-from .models import ExampleDomainModel
-from .domain import ExampleDomain
-# from apps.{{app_name}}.exceptions import NotFoundException
-# from apps.{{app_name}}.models import ExampleDomainModel
-# from apps.{{app_name}}.domain import ExampleDomain
+from common.exceptions import NotFoundException
+from apps.appname.models import ExampleDomainModel
+from apps.appname.domain import ExampleDomain
 from django.core.exceptions import ObjectDoesNotExist
 
 

@@ -1,6 +1,7 @@
-# 프로젝트 이름
+# django-templates
 
-이 프로젝트는 Layered Architecture를 기반으로 한 Domain 중심의 개발을 목표로 합니다. 각 레이어의 역할과 책임을 명확히 하여 유지보수성과 확장성을 높였습니다.
+- Layered Architecture를 기반으로 한 Domain 중심의 개발을 목표로 합니다. 
+- 각 레이어의 역할과 책임을 명확히 하여 유지보수성과 확장성을 높였습니다.
 
 ## 아키텍처 개요
 

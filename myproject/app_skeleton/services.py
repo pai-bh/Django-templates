@@ -1,8 +1,8 @@
 from rest_framework.response import Response
 from django.shortcuts import render
-from .dto import ExampleDomainDTO
-from .repository import ExampleDomainRepository
-from .domain import ExampleDomain
+from apps.appname.dto import ExampleDomainDTO
+from apps.appname.repository import ExampleDomainRepository
+from apps.appname.domain import ExampleDomain
 
 
 def example_view_get(request):

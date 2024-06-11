@@ -1,8 +1,7 @@
 from typing import List, Optional
 from django.db import transaction
-
-from .exceptions import NotFoundException
-from .models import ExampleDomainModel
+from apps.new_app.models import ExampleDomainModel
+from common.exceptions import NotFoundException
 from .domain import ExampleDomain
 # from apps.new_app.exceptions import NotFoundException
 # from apps.new_app.models import ExampleDomainModel
